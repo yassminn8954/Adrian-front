@@ -3,8 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
+  "scripts": {"dev": "npm run start:dev",  
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
