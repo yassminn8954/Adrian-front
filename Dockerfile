@@ -10,4 +10,4 @@ WORKDIR /app
 RUN npm install -g serve
 COPY --from=build /app/dist ./dist
 EXPOSE 5173
-CMD ["npm", "run", "start:dev"]
+CMD ["serve", "-s", "dist", "-l", "5173"]
