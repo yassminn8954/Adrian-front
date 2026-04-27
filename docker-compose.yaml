@@ -1,0 +1,15 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: Adrian_front
+    ports:
+      - "5173:5173"
+    command: ["serve", "-s", "dist", "-l", "5173"]
+    networks:
+      - adrian_front
+
+networks:
+  adrian_front:
+    driver: bridge
